@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <!-- Bước 3: Khai báo DOCTYPE và Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog cá nhân giới thiệu bản thân sinh viên năm 2">
+    <title>Blog Cá Nhân - Hoàng Thị Mỹ Trang</title>
+    <!-- Liên kết CSS tách riêng nằm cùng thư mục -->
+    <link rel="stylesheet" href="blogcanhan.css">
+</head>
+
+<body>
+
+    <!-- Bước 4: HEADER & Navigation dính (sticky) -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">HTMT<span>.blog</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#skills">Kỹ năng</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                    <li><a href="#journey">Hành trình</a></li>
+                    <li><a href="#blog">Bài viết</a></li>
+                    <li><a href="#footer">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bước 5: HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1 class="greeting">Xin chào! Mình là <span class="highlight-name">Hoàng Thị Mỹ Trang</span></h1>
+                    <p class="animated-text">Một <span>Sinh viên Công nghệ Thông tin</span></p>
+                    <p class="hero-desc">
+                        Hiện đang là sinh viên năm 2. Mình yêu thích lập trình web, thiết kế giao diện tinh tế và khám
+                        phá những công nghệ mới.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">Xem hồ sơ</a>
+                        <a href="#footer" class="btn btn-secondary">Liên hệ tôi</a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <img src="https://i.pinimg.com/236x/cb/e8/ef/cbe8efcface6ff5bb491e1994f42e525.jpg" alt="Ảnh chân dung Hoàng Thị Mỹ Trang" class="avatar-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bước 6: SECTION Giới thiệu bản thân -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Giới thiệu bản thân</h2>
+                <div class="about-content">
+                    <p>
+                        Hiện tại, mình đang học ngành <strong>Công nghệ Thông tin</strong> tại <em>Trường Đại học 
+                        GTVT phân hiệu tại TP HCM</em>
+                        Sở thích lớn nhất của mình là <span>đọc sách</span>,<span>viết blog</span> và
+                        <span>chụp ảnh phố phường</span>.
+                        Định hướng tương lai của mình là trở thành một <strong> chủ tiệm photocopy 
+                        </strong> vì mình biết công nghệ in ấn là một trong những nhân tố quyết định vận mệnh quốc gia </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bước 7: SECTION Kỹ năng / Công cụ -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Kỹ năng & Công cụ</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">HTML5 & CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Figma UI/UX</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">C++ / Python</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bước 8: SECTION Dự án / Hoạt động nổi bật -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Dự án nổi bật</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.KG10dIBPnPe1dg9iW1oETAHaHa?r=0&pid=Api&h=220&P=0" alt="Dự án 1">
+                        </div>
+                        <div class="card-body">
+                            <h3>Website Quản Lý Sinh Viên</h3>
+                            <p>Ứng dụng web nhỏ giúp quản lý danh sách và điểm số sinh viên giao diện tối giản.</p>
+                            <a href="#" class="card-link">Xem chi tiết &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.O2j9-FydLbKFzje94wQ2bwHaGG?r=0&pid=Api&h=220&P=0" alt="Dự án 2">
+                        </div>
+                        <div class="card-body">
+                            <h3>Thiết kế App Đọc Sách</h3>
+                            <p>Bản UI/UX hoàn chỉnh trên Figma cho ứng dụng đọc sách điện tử cá nhân.</p>
+                            <a href="#" class="card-link">Xem chi tiết &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="https://giaitritivi.com/wp-content/uploads/2025/09/Meme-con-cho-mac-ao-rach-ngo-nghinh.webp" alt="Dự án 3">
+                        </div>
+                        <div class="card-body">
+                            <h3>Giao diện Blog Nhẹ Nhàng</h3>
+                            <p>Giao diện blog cá nhân tối ưu hóa tốc độ tải trang và trải nghiệm đọc chữ.</p>
+                            <a href="#" class="card-link">Xem chi tiết &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bước 9: SECTION Hành trình / Dòng thời gian -->
+        <section id="journey" class="journey-section">
+            <div class="container">
+                <h2 class="section-title">Hành trình của tôi</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="time">2025</span>
+                        <h4>Nhập học Đại học</h4>
+                        <p>Bắt đầu hành trình khám phá thế giới lập trình và các kiến thức cơ bản.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">2026</span>
+                        <h4>Sinh viên Năm 2</h4>
+                        <p>Tập trung học sâu về Web Frontend, UI Design và thực hành dự án cá nhân.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">2027</span>
+                        <h4>Mục tiêu sắp tới</h4>
+                        <p>Tìm kiếm cơ hội NCKH</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bước 10: SECTION Bài viết / Chia sẻ kèm ASIDE -->
+        <section id="blog" class="blog-section">
+            <div class="container blog-container">
+                <div class="main-content">
+                    <h2 class="section-title">Bài viết mới</h2>
+                    <article class="blog-post">
+                        <h3>Kinh nghiệm học HTML/CSS hiệu quả cho sinh viên năm 2</h3>
+                        <p class="post-meta">Đăng ngày 15/10/2026 | Tác giả: Mỹ Trang</p>
+                        <p>Học lập trình web đòi hỏi tính kiên trì và việc thực hành xây dựng giao diện thực tế sẽ giúp
+                            bạn ghi nhớ thuộc tính lâu hơn...</p>
+                    </article>
+                    <article class="blog-post">
+                        <h3>Tại sao nên chọn bảng màu Pastel cho Blog cá nhân?</h3>
+                        <p class="post-meta">Đăng ngày 02/10/2026 | Tác giả: Mỹ Trang</p>
+                        <p>Màu sắc dịu nhẹ giúp người đọc tập trung vào nội dung bài viết tốt hơn, giảm mỏi mắt khi trải
+                            nghiệm trong thời gian dài...</p>
+                    </article>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="aside-widget">
+                        <h3>Bài viết mới nhất</h3>
+                        <ul>
+                            <li><a href="#">Mẹo tối ưu layout với Flexbox</a></li>
+                            <li><a href="#">Cách phối màu trong UI Design</a></li>
+                            <li><a href="#">Lộ trình học Frontend 2025</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside-widget">
+                        <h3>Kết nối với mình</h3>
+                        <div class="social-links">
+                            <a href="#">Facebook</a> | <a href="#">GitHub</a> | <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bước 11: FOOTER -->
+    <footer id="footer" class="site-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Hoàng Thị Mỹ Trang. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Facebook</a>
+                <a href="#">GitHub</a>
+                <a href="#">Email</a>
+            </div>
+            <a href="#home" class="back-to-top">Về đầu trang &uarr;</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
