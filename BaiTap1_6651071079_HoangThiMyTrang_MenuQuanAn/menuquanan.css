@@ -60,8 +60,8 @@ a {
 }
 
 .logo-img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     /* 10. Áp dụng border-radius bo tròn ảnh logo */
     border-radius: 50%;
     object-fit: cover;
