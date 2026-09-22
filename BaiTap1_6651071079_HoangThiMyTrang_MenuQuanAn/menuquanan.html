@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang web menu chính thức của Neko Coffee - Cà phê mèo ấm cúng và tinh tế.">
+    <title>Neko Coffee - Cà Phê Mèo & Bánh Ngọt</title>
+    <!-- Liên kết tới file CSS riêng biệt -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font chữ Google Fonts hỗ trợ tiếng Việt dễ thương, tinh tế -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 3. HEADER: Logo, Tên quán, Slogan -->
+    <header class="site-header">
+        <div class="header-content">
+            <!-- Logo chú mèo kết hợp ly cà phê -->
+            <img src="../images/logo.png" alt="Logo Neko Coffee - Mèo và ly cà phê" class="logo-img">
+            <div class="header-text">
+                <h1>Neko Coffee</h1>
+                <!-- Slogan tinh tế, nhẹ nhàng, không quá sến -->
+                <p class="slogan">Nốt trầm dịu êm bên những tiếng purr</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4. NAVIGATION: Thanh menu ngang -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#trang-chu" class="active">Trang chủ</a></li>
+            <li><a href="#thuc-don">Thực đơn</a></li>
+            <li><a href="#khuyen-mai">Khuyến mãi</a></li>
+            <li><a href="#lien-he">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Khối Banner trang trí có hiệu ứng background -->
+    <div class="banner-section" id="trang-chu">
+        <div class="banner-overlay">
+            <h2>Ghé thăm ngôi nhà nhỏ của những chú mèo cưng</h2>
+            <p>Không gian yên bình, hương vị cà phê mượt mà và sự ấm áp từ những người bạn bốn chân.</p>
+        </div>
+    </div>
+
+    <!-- Khối bố cục chính (Chứa Nội dung chính + Aside) -->
+    <div class="container main-layout">
+
+        <!-- 5 & 6. Nội dung chính chứa các SECTION & ARTICLE -->
+        <main class="main-content" id="thuc-don">
+
+            <!-- Section Giới thiệu chung -->
+            <section class="intro-section">
+                <h2 class="section-title">Về Neko Coffee</h2>
+                <p>Neko Coffee mang đến không gian thư giãn dịu nhẹ với tông màu ấm áp. Nơi bạn có thể thưởng thức những
+                    tách cà phê thơm nồng, nhâm nhi miếng bánh ngọt mát và vuốt ve những chú mèo xinh xắn.</p>
+            </section>
+
+            <!-- Section 1: Thức uống -->
+            <section class="menu-section">
+                <h2 class="section-title">Thức Uống Nổi Bật</h2>
+                <div class="card-grid">
+
+                    <article class="menu-card">
+                        <img src="../images/latte.jpg" alt="Mèo Béo Latte">
+                        <div class="card-body">
+                            <h3>Mèo Béo Latte</h3>
+                            <p class="card-desc">Latte sánh mịn kết hợp nghệ thuật tạo hình bọt sữa hình măng cụt mèo
+                                đáng yêu.</p>
+                            <div class="card-footer">
+                                <span class="price">49.000đ</span>
+                                <button class="btn-order">Đặt món</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="../images/espresso.jpg" alt="Cà Phê Muối Neko">
+                        <div class="card-body">
+                            <h3>Cà Phê Muối Neko</h3>
+                            <p class="card-desc">Cà phê phin đậm đà phủ lớp màng kem muối béo ngậy ngọt dịu nhẹ.</p>
+                            <div class="card-footer">
+                                <span class="price">45.000đ</span>
+                                <button class="btn-order">Đặt món</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="../images/matcha.jpg" alt="Trà Sữa Matcha Purr">
+                        <div class="card-body">
+                            <h3>Matcha Purr Latte</h3>
+                            <p class="card-desc">Trà xanh Uji Nhật Bản nguyên chất phối hợp cùng sữa tươi thơm béo.</p>
+                            <div class="card-footer">
+                                <span class="price">52.000đ</span>
+                                <button class="btn-order">Đặt món</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Section 2: Tráng miệng / Bánh ngọt -->
+            <section class="menu-section">
+                <h2 class="section-title">Bánh Ngọt Thơm Lừng</h2>
+                <div class="card-grid">
+
+                    <article class="menu-card">
+                        <img src="../images/tiramisu.jpg" alt="Tiramisu Măng Cụt">
+                        <div class="card-body">
+                            <h3>Tiramisu Măng Cụt</h3>
+                            <p class="card-desc">Bánh Tiramisu truyền thống mềm mịn, phủ bột cacao hình dấu chân mèo.
+                            </p>
+                            <div class="card-footer">
+                                <span class="price">55.000đ</span>
+                                <button class="btn-order">Đặt món</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="../images/cheesecake.jpg" alt="Cheesecake Dâu Tây">
+                        <div class="card-body">
+                            <h3>Cheesecake Dâu Mèo</h3>
+                            <p class="card-desc">Bánh phô mai nướng béo ngậy ăn kèm sốt dâu tây tươi chua ngọt nhẹ.</p>
+                            <div class="card-footer">
+                                <span class="price">58.000đ</span>
+                                <button class="btn-order">Đặt món</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 7. ASIDE đặt cạnh nội dung chính -->
+        <aside class="sidebar-promo" id="khuyen-mai">
+            <div class="promo-box">
+                <h2 class="promo-title">Món Được Yêu Thích</h2>
+                <div class="promo-content">
+                    <img src="../images/latte.jpg" alt="Latte đặc biệt" class="promo-img">
+                    <p class="promo-highlight"><strong>Mèo Béo Latte</strong> đang giảm giá <strong>15%</strong> trong
+                        tuần này khi bạn ghé thăm quán trước 10h sáng!</p>
+                </div>
+            </div>
+
+            <div class="cat-rules">
+                <h3>Lưu Ý Nhỏ Khi Chơi Với Mèo</h3>
+                <ul>
+                    <li>Vui lòng rửa tay trước khi vuốt ve mèo.</li>
+                    <li>Không sử dụng đèn flash khi chụp ảnh.</li>
+                    <li>Không cho mèo ăn thức ăn của người.</li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- 8. FOOTER: Thông tin liên hệ, giờ mở cửa, bản quyền -->
+    <footer class="site-footer" id="lien-he">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Giờ Mở Cửa</h4>
+                <p>Thứ Hai - Chủ Nhật: 08:00 - 22:00</p>
+                <p>Thời gian nghỉ ngơi của Mèo: 13:00 - 14:00</p>
+            </div>
+            <div class="footer-col">
+                <h4>Thông Tin Liên Hệ</h4>
+                <p>Địa chỉ: 123 Đường Bàn Tay Mèo, Quận 1, TP.HCM</p>
+                <p>Điện thoại: 0901 234 567</p>
+                <p>Email: hello@nekocoffee.vn</p>
+            </div>
+            <div class="footer-col">
+                <h4>Mạng Xã Hội</h4>
+                <p><a href="#">Facebook: /NekoCoffeeCat</a></p>
+                <p><a href="#">Instagram: @nekocoffee_vn</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Neko Coffee. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

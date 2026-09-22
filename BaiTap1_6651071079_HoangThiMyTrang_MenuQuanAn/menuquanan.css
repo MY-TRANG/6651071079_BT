@@ -1,0 +1,416 @@
+/* ==========================================================================
+   BẢNG MÀU CHỦ ĐẠO (SOFT PASTEL CAT CAFE PALETTE)
+   - Background chính: #FDFBF7 (Trắng kem ấm)
+   - Bề mặt card/box:  #FFFFFF (Trắng tinh)
+   - Màu nhấn chính:   #A07855 (Nâu cà phê ấm mịn)
+   - Màu phụ dễ thương:#E8A598 (Hồng măng cụt pastel)
+   - Chữ chính:        #4A3F35 (Nâu đen dịu mắt, không dùng màu đen chói)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   9. ĐỊNH DẠNG SELECTOR 1: Universal Selector (*)
+   Tác dụng: Reset margin, padding và thiết lập box-sizing cho toàn bộ phần tử.
+   -------------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------
+   9. ĐỊNH DẠNG SELECTOR 2: Tag Selector (body, h1, h2, h3, p, a...)
+   Tác dụng: Thiết lập kiểu chữ, màu nền tổng thể cho các thẻ HTML căn bản.
+   -------------------------------------------------------------------------- */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FDFBF7;
+    color: #4A3F35;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #A07855;
+    transition: color 0.3s ease;
+}
+
+/* --------------------------------------------------------------------------
+   HEADER REGION
+   -------------------------------------------------------------------------- */
+/* 12. Áp dụng background-size, background-position cho header/banner */
+.site-header {
+    background-color: #F4ECE1;
+    background-image: url('../images/bg_pattern.png'); /* Pattern chìm nhẹ */
+    background-size: cover;
+    background-position: center;
+    padding: 25px 20px;
+    border-bottom: 3px solid #E2D4C3;
+}
+
+/* 9. ĐỊNH DẠNG SELECTOR 3: Descendant Selector (site-header .header-content)
+   Tác dụng: Căn chỉnh nội dung bên trong header. */
+.site-header .header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    /* 10. Áp dụng border-radius bo tròn ảnh logo */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #A07855;
+}
+
+.header-text h1 {
+    font-size: 2.2rem;
+    color: #5C3D2E;
+    font-weight: 800;
+}
+
+/* 3. Phrasing Content: Slogan ngắn gọn, tinh tế */
+.slogan {
+    font-size: 1rem;
+    color: #8C6D53;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   4. NAVIGATION MENU
+   -------------------------------------------------------------------------- */
+.main-nav {
+    background-color: #A07855;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* 10. Áp dụng box-shadow đổ bóng nhẹ cho thanh menu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 9. ĐỊNH DẠNG SELECTOR 4: Child Selector (ul > li)
+   Tác dụng: Định dạng danh sách cấp trực tiếp trong thanh nav. */
+.main-nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.main-nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+}
+
+/* 9. ĐỊNH DẠNG SELECTOR 5: Pseudo-class Selector (:hover, :first-child...)
+   Tác dụng: Tạo hiệu ứng tương tác khi rê chuột. */
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    background-color: #88603E;
+    color: #FDFBF7;
+}
+
+/* --------------------------------------------------------------------------
+   BANNER HERO SECTION
+   -------------------------------------------------------------------------- */
+.banner-section {
+    /* 12. Áp dụng background-size & position cho banner nền */
+    background-image: url('../images/cat_cafe_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-overlay {
+    background-color: rgba(253, 251, 247, 0.88);
+    padding: 30px 40px;
+    /* 10. Bo góc và đổ bóng nhẹ cho ô thông điệp */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 20px;
+}
+
+.banner-overlay h2 {
+    color: #5C3D2E;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   MAIN LAYOUT (Flexbox chia 2 cột: Content & Aside)
+   -------------------------------------------------------------------------- */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.main-layout {
+    display: flex;
+    gap: 30px;
+}
+
+.main-content {
+    flex: 3;
+}
+
+/* 12. Áp dụng background-origin và background-clip cho tiêu đề Section */
+.section-title {
+    font-size: 1.5rem;
+    color: #5C3D2E;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    background-color: #F4ECE1;
+    border-left: 5px solid #E8A598;
+    /* Áp dụng background-origin và background-clip */
+    background-origin: padding-box;
+    background-clip: padding-box;
+    /* 10. Bo góc nhẹ cho vệt tiêu đề */
+    border-radius: 0 8px 8px 0;
+}
+
+.intro-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    margin-bottom: 30px;
+}
+
+.menu-section {
+    margin-bottom: 40px;
+}
+
+/* Lưới hiển thị các thẻ CARD món ăn */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   ARTICLE / CARD MÓN ĂN
+   -------------------------------------------------------------------------- */
+/* 9. ĐỊNH DẠNG SELECTOR 6: Class Selector (.menu-card) */
+.menu-card {
+    background-color: #FFFFFF;
+    /* 10. Áp dụng border-radius bo góc và box-shadow đổ bóng card */
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.09);
+}
+
+/* 10. Áp dụng bo góc & định dạng cho ảnh món ăn */
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body h3 {
+    font-size: 1.15rem;
+    color: #5C3D2E;
+    margin-bottom: 8px;
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    color: #7A6E65;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Giá tiền có class riêng */
+.price {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #E8A598;
+}
+
+/* Nút đặt món (Content - Interactive: button) */
+.btn-order {
+    background-color: #A07855;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 16px;
+    /* 10. Bo góc tròn dễ thương cho nút */
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order:hover {
+    background-color: #88603E;
+}
+
+/* --------------------------------------------------------------------------
+   7 & 11. ASIDE: Khuyến mãi & Khung viền trang trí
+   -------------------------------------------------------------------------- */
+.sidebar-promo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* 11. Áp dụng border-image cho khung viền trang trí khối "Khuyến mãi" ở aside */
+.promo-box {
+    background-color: #FFFFFF;
+    padding: 20px;
+    /* Thiết lập border cơ sở trước khi chèn border-image */
+    border: 10px solid transparent;
+    /* Áp dụng gradient làm border-image trang trí viền mềm mại */
+    border-image: linear-gradient(to bottom right, #E8A598, #F4ECE1, #A07855) 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.promo-title {
+    font-size: 1.25rem;
+    color: #5C3D2E;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.promo-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.promo-highlight {
+    font-size: 0.92rem;
+    color: #5C3D2E;
+}
+
+.cat-rules {
+    background-color: #F4ECE1;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.cat-rules h3 {
+    font-size: 1.1rem;
+    color: #5C3D2E;
+    margin-bottom: 10px;
+}
+
+.cat-rules ul {
+    padding-left: 20px;
+    font-size: 0.9rem;
+    color: #66584C;
+}
+
+.cat-rules li {
+    margin-bottom: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   8 & 12. FOOTER: Có kết hợp Multiple Background Images
+   -------------------------------------------------------------------------- */
+.site-footer {
+    color: #FDFBF7;
+    margin-top: 50px;
+    padding: 40px 20px 20px 20px;
+    
+    /* 12. Áp dụng multiple background images (kết hợp họa tiết và lớp màu nền) */
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(232, 165, 152, 0.15) 0%, transparent 20%),
+        linear-gradient(to bottom, #5C3D2E, #4A2E21);
+    background-color: #5C3D2E;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-col h4 {
+    font-size: 1.1rem;
+    color: #E8A598;
+    margin-bottom: 12px;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #E2D4C3;
+}
+
+.footer-col a {
+    color: #E2D4C3;
+}
+
+.footer-col a:hover {
+    color: #E8A598;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(226, 212, 195, 0.2);
+    font-size: 0.85rem;
+    color: #C2B2A3;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE DESIGN (Hỗ trợ hiển thị mượt mà trên di động)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+    
+    .site-header .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+}
